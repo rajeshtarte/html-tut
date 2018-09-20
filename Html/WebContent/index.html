@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!-- HTML 5 -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Html Tutorial</title>
+</head>
+<body>
+	<p>
+		<strong>HTML</strong> is Tag based language.
+	</p>
+	<p>
+		HTML : <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage
+	</p>
+	<p>
+		<font color="red"> <b>Provide Example</b></font>
+	</p>
+	<hr>
+	<h3>Block Level Elements</h3>
+	<p>Default behaviour of block level element is
+	<ul>
+		<li>fill the container unless width is specifed</li>
+		<li>insert new line before and after contents</li>
+		<li>can not be nested within inline element</li>
+		<li>can contain inline elements</li>
+		<li>can contain other block Elements</li>
+		<li>Example : DIV , P-Paragraph, H1-H6- Header Tags, List tag and
+			items</li>
+	</ul>
+
+	<h3>Inline Elements</h3>
+	Default behaviour of Inline element is
+	<ul>
+		<li>Goes with the flow</li>
+		<li>Cant have block elements</li>
+		<li>Can have other inline elements</li>
+		<li>Example : em-emphasis, strong,bold,italic</li>
+	</ul>
+	<hr>
+	<h3>Paragraph example</h3>
+	Its block element and add new line
+	<h4>Long Text Without Paragraph</h4>
+	This is sample text.This is sample text.This is sample text.This is
+	sample text.This is sample text.This is sample text.This is sample
+	text.This is sample text.This is sample text.This is sample text.This
+	is sample text.This is sample text.This is sample text.This is sample
+	text.This is sample text.This is sample text.This is sample text.This
+	is sample text.This is sample text.This is sample text.This is sample
+	text.This is sample text.This is sample text.This is sample text.This
+	is sample text.This is sample text.
+	<h4 id="useParagraph">Long Text With Paragraph</h4>
+	<p>This is sample text.This is sample text.This is sample text.This
+		is sample text.This is sample text.This is sample text.This is sample
+		text.This is sample text.This is sample text.This is sample text.This
+		is sample text.This is sample text.</p>
+	<p>This is sample text.This is sample text.This is sample text.This
+		is sample text.This is sample text.This is sample text.This is sample
+		text.This is sample text.This is sample text.This is sample text.This
+		is sample text.This is sample text.This is sample text.This is sample
+		text.</p>
+	<p>This is sample text.This is sample text.This is sample text.</p>
+	<hr />
+	<h3>Line break Example</h3>
+	Useful for adding line in address or poem , dont use it to add bigger
+	gaps , use css instead
+
+	<h4>Before line break</h4>
+	This is line 1, This is line 2, This is line 3, This is line 4.
+
+	<h4>Using line break</h4>
+	This is line 1,
+	<br /> This is line 2,
+	<br /> This is line 3,
+	<br /> This is line 4.
+	<hr />
+	<h3>Division and Span Element</h3>
+	<ul>
+		<li>Div is generic block container</li>
+		<li>Span is lnline Element</li>
+		<li>Use Div and Span when there no other element makes sense</li>
+		<li>Used along with css</li>
+	</ul>
+
+	<b>Example using Paragraph and emphasis</b>
+	<p>
+		This is sample text.This is sample text.This is sample text.This is
+		sample text.<em>This is Important text.</em>This is sample text.This
+		is sample text.This is sample text.This is sample text.This is Sample
+		text.This is sample text.This is sample text.
+	</p>
+	<b>Example using Div and Span</b>
+	<div>
+		This is sample text.This is sample text.This is sample text.This is
+		sample text.<span class="highlight">This is Important text.</span>This
+		is sample text.This is sample text.This is sample text.This is sample
+		text.This is Sample text.This is sample text.This is sample text.
+	</div>
+	<hr />
+	<h3>Anchor Element</h3>
+	<ul>
+		<li>used to link section,other pages or pages from external web
+			sites</li>
+		<li>Its inline element</li>
+		<li>use / to specify location with respective to root in href</li>
+		<li>href value without / means relative path with reference to
+			current page</li>
+	</ul>
+	<p>
+		<a href="http://www.google.com">Google</a> | <a
+			href="/about/page2.html">About</a> | <a
+			href="mailto:rajeshtarte@gmail.com">contacts</a> | <a
+			href="#useParagraph">How to use paragraph</a> | <a
+			href="/about/page2.html#someOtherParagraph"> paragraph on other
+			page </a>
+	</p>
+	<hr />
+	<h3>Images</h3>
+	<ul>
+		<li>its Empty element</li>
+		<li>allow to load image file in browser</li>
+		<li>use alt to provide info about the image for screen reader or
+			to dispaly text in case of image not loaded</li>
+		<li>use empty alt attribute which will be ignored by screenreader</li>
+		<li>do not use height and width atrribute for responsive design ,
+			use css instead</li>
+	</ul>
+
+	Example Image in the same directory as current page
+	<img src="butterfly.png">
+	<br /> Image in the sub directory as current page
+	<img src="images/butterfly2.png">
+	<br>
+	<img src="unKnownImage.png" alt=" New Butterfly">
+	<br /> Original image
+	<img src="images/butterfly3.jpg" alt="">
+	<br /> Using Smaller Height and width
+	<img src="images/butterfly3.jpg" alt="" height="100" width="100">
+	</br> Using larger Height and width 2
+	<img src="images/butterfly3.jpg" alt="" height="600" width="600">
+	<br /> Images with link
+	<a href="images/butterfly2.png"><img src="images/butterfly3.jpg"
+		alt="" height="10%" width="10%"></a>
+	<br />
+	<hr />
+	<h3>Using List</h3>
+	<ul>
+		<li>Ordered List</li>
+		<li>Unordered List</li>
+		<li>Definition List</li>
+		<li>list item and list are block level element and can contain
+			other block elements</li>
+		<li></li>
+	</ul>
+	Order list example
+	<ol>
+		<li>item one</li>
+		<li>item two</li>
+		<li>item three</li>
+	</ol>
+	Unorder list example
+	<ul>
+		<li>item one</li>
+		<li>item two</li>
+		<li>item three</li>
+	</ul>
+	Defintion list example
+	<dl>
+		<dt>img</dt>
+		<dd>The HTML Image Element</dd>
+		<dt>nav</dt>
+		<dd>The HTML Element for Navigation</dd>
+		<dt>p</dt>
+		<dd>The HTML pargarph Element</dd>
+		<dt>ul</dt>
+		<dt>ol</dt>
+		<dt>dl</dt>
+		<dd>HTML List Element</dd>
+	</dl>
+	Nested List example
+	<ul>
+		<li>item one
+			<ul>
+				<li>sub item one</li>
+				<li>sub item two</li>
+				<li>sub item three</li>
+			</ul>
+		</li>
+		<li>item two
+			<ul>
+				<li>sub item four</li>
+				<li>sub item five</li>
+
+			</ul>
+		</li>
+
+		<li>item three</li>
+	</ul>
+	<hr/>
+	<h3> Table </h3>
+	<ul>
+	<li>Useful for tabular data</li>
+	<li>previously used for layout, prefer css for layout</li>
+	</ul>
+	
+	Example : Country info
+	
+	<table>
+	<tr>
+	<td>India</td>
+	<td>Rupee</td>
+	<td>Hindi</td>
+	</tr>
+	<tr>
+	<td>UK</td>
+	<td>Pound Sterling</td>
+	<td>English</td>
+	</tr>
+	<tr>
+	<td>US</td>
+	<td>Dollar</td>
+	<td>English</td>
+	</tr>
+	</table>
+	
+	Example : Country info with table header
+	
+	<table>
+	<tr>
+	<th>Country</th>
+	<th>Currency</th>
+	<th>Language</th>
+	</tr>
+	<tr>
+	<td>India</td>
+	<td>Rupee</td>
+	<td>Hindi</td>
+	</tr>
+	<tr>
+	<td>UK</td>
+	<td>Pound Sterling</td>
+	<td>English</td>
+	</tr>
+	<tr>
+	<td>US</td>
+	<td>Dollar</td>
+	<td>English</td>
+	</tr>
+	</table>
+	
+	Example : Country info with table header and caption
+	<table>
+	<caption> <font color="green">Country details </font></caption>
+	<tr>
+	<th>Country</th>
+	<th>Currency</th>
+	<th>Language</th>
+	</tr>
+	<tr>
+	<td>India</td>
+	<td>Rupee</td>
+	<td>Hindi</td>
+	</tr>
+	<tr>
+	<td>UK</td>
+	<td>Pound Sterling</td>
+	<td>English</td>
+	</tr>
+	<tr>
+	<td>US</td>
+	<td>Dollar</td>
+	<td>English</td>
+	</tr>
+	</table>
+	Example : Country info with table header and caption nad thead[useful for css]
+	<table>
+	<caption> <font color="green">Country details </font></caption>
+	<thead>
+	<tr>
+	<th>Country</th>
+	<th>Currency</th>
+	<th>Language</th>
+	</tr>
+	</thead>
+	<tr>
+	<td>India</td>
+	<td>Rupee</td>
+	<td>Hindi</td>
+	</tr>
+	<tr>
+	<td>UK</td>
+	<td>Pound Sterling</td>
+	<td>English</td>
+	</tr>
+	<tr>
+	<td>US</td>
+	<td>Dollar</td>
+	<td>English</td>
+	</tr>
+	</table>
+	<hr/>
+	HTML 5 online Validator 
+	<a href="http://validator.w3.org">http://validator.w3.org</a>
+	<hr/>
+	<h3> Document Structure</h3>
+</body>
+</html>
